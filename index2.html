@@ -1,0 +1,201 @@
+<!-- 
+    Document: Personal Portfolio Website
+    Author: Joyce Wakari Karanja
+    Description: A personal portfolio website showcasing my projects, skills, and experience as a Software Developer and AI Enthusiast.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        Meta tags for character encoding and viewport settings.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        Page title and links to external stylesheets.
+    -->
+    <title>Joyce Karanja - Software Engineer | Data Analyst</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- 
+        Header section with navigation menu and dark mode toggle button.
+    -->
+    <header>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+        <div class="logo">JK</div>
+        <nav>
+            <ul>
+                <li><a href="#works" class="nav-link">Projects</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- 
+        Main content section with headline, projects, about, and contact sections.
+    -->
+    <main>
+        <!-- 
+            Headline section with profile image and introductory text.
+        -->
+        <section id="headline">
+            <div class="profile-image-container">
+                <img src="resourses\WhatsApp Image 2025-03-26 at 2.31.40 PM.jpeg" alt="joycekaranja" class="profile-image">
+            </div>
+            <div class="headline-container"><br><br>
+                <h1 class="headline-title"></h1>
+                <p class="poppins">
+                    Hello! I'm Joyce Karanja, a passionate Data Scientist and Software Engineer dedicated to turning data into actionable insights and creating robust software solutions. With a strong foundation in data analysis, machine learning, and software development, I thrive on solving complex problems and driving innovation.
+                </p>
+                <div class="headline-container">
+                    <h1 class="headline-title">My Journey</h1>
+                    <p class="poppins">
+                        My journey in the tech world began with a curiosity for how data can shape decisions and the power of technology to transform industries. Over the years, I've honed my skills in data analytics, statistical modeling, and software engineering, allowing me to tackle a diverse range of projects. From building predictive models to designing user-friendly applications, my work is driven by a commitment to excellence and a desire to make a meaningful impact.
+                    </p>
+                    <a href="#works" class="btnBlue">See My Projects</a>
+                </div>
+            </div>
+        </section>
+          <!-- 
+            Projects section with grid layout and project cards.
+        -->   
+        <section id="works">
+            <h2 class="playfair">Projects</h2>
+            <h2 class="playfair">Software DEV Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project">
+                    <img src="resourses\lib.jpg" alt="Library Management System" class="project-image">
+                    <div class="project-description">
+                        <h3 class="project-title">Library Management System</h3>
+                        <ul class="tech-container">
+                            <li class="tech-item">Java</li>
+                            <li class="tech-item">TypeScript</li>
+                        </ul>
+                        <a href="https://github.com/Kayce-joy/Library-Management-System" class="btnBlue seeProjBtn">See Project</a>
+                    </div>
+                </div>
+        
+                <!-- Project 2 -->
+                <div class="project">
+                    <img src="resourses\7468683e-08aa-4ee3-8a82-f09fcd2b8704.jpg" alt="Project 2 Name" class="project-image">
+                    <div class="project-description">
+                        <h3 class="project-title">Photo Canvas Ecommerce</h3>
+                        <ul class="tech-container">
+                            <li class="tech-item">Python</li>
+                            <li class="tech-item">HTML/CSS</li>
+                            <li class="tech-item">JavaScript</li>
+                        </ul>
+                        <a href="https://github.com/Kayce-joy/Photo-Canvas-Ecommerce" class="btnBlue seeProjBtn">See Project</a>
+                    </div>
+                </div>
+        
+                <!-- Project 3 -->
+                <div class="project">
+                    <img src="resourses\Screenshot 2024-07-30 190323.png" alt="Project 3 Name" class="project-image">
+                    <div class="project-description">
+                        <h3 class="project-title">Deep Learning Model for Colon Cancer Diagnosis</h3>
+                        <ul class="tech-container">
+                            <li class="tech-item">Python</li>
+                            <li class="tech-item">Machine Learning</li>
+                            <li class="tech-item">Pandas</li>
+                            <li class="tech-item">TensorFlow</li>
+                            <li class="tech-item">PHP</li>
+                        </ul>
+                        <a href="https://github.com/Kayce-joy/User-interface-Deep-Learning-Model-for-Colon-Cancer-Diagnosis" class="btnBlue seeProjBtn">See Project</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <h2 class="playfair">Data Analysis Projects</h2>
+        </section>
+
+        <section id="about">
+            <div>
+                <h2 class="playfair">About Me</h2>
+                <p class="poppins">Positive and upbeat problem-solver with a strong analytical mindset and a passion for tackling challenges. Skilled in developing efficient, scalable solutions and collaborating in dynamic environments to drive innovation and impact.</p>
+                <a href="resourses\JOYCE KARANJA RESUME.pdf" class="btnBlue getCV">Get My CV <span class="download"></span></a>
+            </div>
+            <div class="tech-cards-container">
+                <div class="tech-card langs">
+                    <h3>Languages</h3>
+                    <ul class="tech">
+                        <li>Python</li>
+                        <li>HTML/CSS</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+                <div class="tech-card frames">
+                    <h3>Frameworks</h3>
+                    <ul class="tech">
+                        <li>Bootstrap</li>
+                        <li>Flask</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>Django</li>
+                        <li>FastAPI</li>
+                    </ul>
+                </div>
+                <div class="tech-card skills">
+                    <h3>Other Skills</h3>
+                    <ul class="tech">
+                        <li>Data Analysis</li>
+                        <li>Networking</li>
+                        <li>Machine Learning</li>
+                        <li>Database Management</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- 
+            Contact information section to reach clients
+        -->
+        <section id="contact">
+            <h2 class="playfair">Contact Me</h2>
+            <p class="poppins">If you have an application you are interested in developing, data that you need to gain insights, a feature that you need built or a project that needs coding, I'd love to help with it!</p>
+            <form>
+                <div class="input-container">
+                    <label for="name">Full name <abbr title="required">*</abbr></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-container">
+                    <label for="email">Email <abbr title="required">*</abbr></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <label for="message" class="msgLbl">Message <abbr title="required">*</abbr></label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="btnBlue">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <!-- 
+        Social Media pages including email, facebook, twitter, instagram and github
+    -->
+    <footer>
+        <a href="mailto:wakarijoyce@gmail.com" class="open">wakarijoyce@gmail.com</a>
+        <div class="wrapper">
+            <div class="icon github">
+                <div class="tooltip">Github</div>
+                <span><a href="https://github.com/Kayce-joy"><i class="fab fa-github"></i></a></span>
+            </div>
+            <div class="icon twitter">
+                <div class="tooltip">Twitter</div>
+                <span><a href="https://twitter.com/your_profile"><i class="fab fa-twitter"></i></a></span>
+            </div>
+            <div class="icon instagram">
+                <div class="tooltip">Instagram</div>
+                <span><a href="https://www.instagram.com/_.kayce._"><i class="fab fa-instagram"></i></a></span>
+            </div>
+            
+        </div>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
