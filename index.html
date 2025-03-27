@@ -18,21 +18,24 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
 </head>
 <body>
     <!-- 
         Header section with navigation menu and dark mode toggle button.
     -->
     <header>
-        <button id="darkModeToggle">Toggle Dark Mode</button>
+        <button id="darkModeToggle">Dark Mode</button>
         <div class="logo">
             <img src="resourses\joy-dev-high-resolution-logo-transparent.png" alt="Logo">
         </div>
         <nav>
             <ul>
                 <li><a href="#works" class="nav-link">Projects</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
+                
             </ul>
         </nav>
     </header>
@@ -47,7 +50,20 @@
         <section id="headline">
             <div class="profile-image-container">
                 <img src="resourses\WhatsApp Image 2025-03-26 at 2.31.40 PM.jpeg" alt="joycekaranja" class="profile-image">
+                
+                <!-- Social links moved inside the profile image container -->
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/your-profile" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/your-username" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <p class="poppins" style="margin-top: 8px;">Joy_Dev</p>
+                </div>
+
             </div>
+            
             
             <div class="headline-container"><br> <br> <br>
                 <h1 class="headline-title"></h1>
@@ -63,11 +79,71 @@
                 <a href="#works" class="btnBlue">See My Projects</a>
             </div>
         </section>
+
+
+
+        <section id="services" class="services-container">
+            <h2 class="section-title">My Services</h2>
+            <div class="services-list">
+                
+                <!-- Web Development -->
+                <div class="service">
+                    <i class="fas fa-code service-icon"></i>
+                    <div>
+                        <h3>Web Development</h3>
+                        <p>Creating responsive and modern websites tailored to your needs.</p>
+                    </div>
+                </div>
+        
+                <!-- UI/UX Design -->
+                <div class="service">
+                    <i class="fas fa-palette service-icon"></i>
+                    <div>
+                        <h3>UI/UX Design</h3>
+                        <p>Designing intuitive and user-friendly interfaces for better experiences.</p>
+                    </div>
+                </div>
+        
+                <!-- Graphic Design -->
+                <div class="service">
+                    <i class="fas fa-paint-brush service-icon"></i>
+                    <div>
+                        <h3>Graphic Design</h3>
+                        <p>Creating compelling visuals, logos, and branding materials.</p>
+                    </div>
+                </div>
+        
+                <!-- Software Development -->
+                <div class="service">
+                    <i class="fas fa-laptop-code service-icon"></i>
+                    <div>
+                        <h3>Software Development</h3>
+                        <p>Building robust applications and solutions for various platforms.</p>
+                    </div>
+                </div>
+        
+                <!-- Data Analysis -->
+                <div class="service">
+                    <i class="fas fa-chart-line service-icon"></i>
+                    <div>
+                        <h3>Data Analysis</h3>
+                        <p>Transforming raw data into meaningful insights for decision-making.</p>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+        
+
+
+
+
+
           <!-- 
             Projects section with grid layout and project cards.
         -->   
         <section id="works">
-            <h2 class="playfair">Projects</h2>
+            <h2 class="playfair" style="font-size: 2rem; font-weight: bold;">Projects</h2><br>
             <h2 class="playfair">Software DEV Projects</h2>
             <div class="projects-grid">
                 <!-- Project 1 -->
@@ -140,9 +216,9 @@
 
         <section id="about">
             <div>
-                <h2 class="playfair">About Me</h2>
+                <h2 class="playfair" style="font-size: 2rem; font-weight: bold;">About Me</h2>
                 <p class="poppins">Positive and upbeat problem-solver with a strong analytical mindset and a passion for tackling challenges. Skilled in developing efficient, scalable solutions and collaborating in dynamic environments to drive innovation and impact.</p>
-                <a href="resourses\JOYCE KARANJA RESUME.pdf" class="btnBlue getCV">Get My CV <span class="download"></span></a>
+                <a href="resourses\JOYCE KARANJA RESUME.pdf" class="btnBlue getCV">View My CV <span class="download"></span></a>
             </div>
             <div class="tech-cards-container">
                 <div class="tech-card langs">
@@ -152,6 +228,7 @@
                         <li>HTML/CSS</li>
                         <li>JavaScript</li>
                         <li>PHP</li>
+                        <li>C++</li>
                     </ul>
                 </div>
                 <div class="tech-card frames">
@@ -176,33 +253,52 @@
                 </div>
             </div>
         </section>
-        <!-- 
-            Contact information section to reach clients
-        -->
         <section id="contact">
-            <h2 class="playfair">Contact Me</h2>
-            <p class="poppins">If you have an application you are interested in developing, data that you need to gain insights, a feature that you need built or a project that needs coding, I'd love to help with it!</p>
-            <form>
-                <div class="input-container">
-                    <label for="name">Full name <abbr title="required">*</abbr></label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="input-container">
-                    <label for="email">Email <abbr title="required">*</abbr></label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <label for="message" class="msgLbl">Message <abbr title="required">*</abbr></label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit" class="btnBlue">Send Message</button>
-            </form>
+            <h2 class="playfair contact-title" style="font-size: 2rem; font-weight: bold;">Let's Connect!</h2>
+            <p class="poppins">
+                Have an idea? Need help with a project? Let's collaborate and build something amazing together! Feel free to drop a message, and I'll get back to you soon.
+            </p>
+        
+            <div class="contact-form-container">
+                <form>
+                    <div class="input-container">
+                        <label for="name"><i class="fas fa-user"></i> Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+        
+                    <div class="input-container">
+                        <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+        
+                    <div class="input-container">
+                        <label for="message"><i class="fas fa-comment-alt"></i> Message</label>
+                        <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+                    </div>
+        
+                    <button type="submit" class="btnAnimated">Send Message</button>
+                </form>
+            </div>
         </section>
-    </main>
+        
+        <button id="backToTop" class="back-to-top">
+            ↑ Back to Top
+        </button>
+
+
     <!-- 
         Social Media pages including email, facebook, twitter, instagram and github
     -->
     <footer>
         <a href="mailto:wakarijoyce@gmail.com" class="open">wakarijoyce@gmail.com</a>
-        <div class="wrapper">
+        <div class="wrapper" style="text-align: center;">
+            <!-- Email Icon -->
+    <div class="icon email">
+        <div class="tooltip">Email</div>
+        <span><a href="mailto:wakarijoyce@gmail.com"><i class="fas fa-envelope"></i></a></span>
+    </div>
+
+
             <div class="icon github">
                 <div class="tooltip">Github</div>
                 <span><a href="https://github.com/Kayce-joy"><i class="fab fa-github"></i></a></span>
