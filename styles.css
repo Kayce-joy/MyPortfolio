@@ -24,9 +24,10 @@ body {
 
 /* Poppins font family */
 .poppins {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    text-align: justify;
 }
 
 /* HEADER STYLES */
@@ -34,7 +35,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 50px; /* Adjust padding */
+    padding: 15px 60px; /* Adjust padding */
     background-color: #283450; /* Dark background */
     color: #fff;
     position: fixed; /* Fix it at the top */
@@ -638,4 +639,10 @@ body.dark-mode #darkModeToggle {
 
 body.dark-mode #darkModeToggle:hover {
     background-color: #fff;
+}
+
+/* LOGO */
+.logo img {
+    height: auto; /* Adjust size as needed */
+    width: 180px;  /* Maintain aspect ratio */
 }
